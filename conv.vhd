@@ -20,7 +20,6 @@ architecture behavioral of conv is
 	signal next_state : s;
 
 	begin
-
 		process (i_clk, i_rst)
 		begin
 			if i_rst = '1' then

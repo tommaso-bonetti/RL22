@@ -10,11 +10,12 @@ entity datapath is
 		o_data : out std_logic_vector (7 downto 0);
 		o_data_long : out std_logic_vector (15 downto 0);
 		o_address : out std_logic_vector (15 downto 0);
+		o_done : out std_logic;
 		load_raddr : in std_logic;
 		load_waddr : in std_logic;
 		load_num : in std_logic;
 		sel_out : in std_logic;
-		rw : in std_logic;
+		rw : in std_logic
 	);
 end datapath;
 
