@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity datapath is
+entity dp is
 	port (
 		i_clk : in std_logic;
 		i_rst : in std_logic;
@@ -17,9 +17,9 @@ entity datapath is
 		sel_out : in std_logic;
 		rw : in std_logic
 	);
-end datapath;
+end dp;
 
-architecture behavioral of datapath is
+architecture behavioral of dp is
 
 	signal read_addr : std_logic_vector (15 downto 0);
 	signal write_addr : std_logic_vector (15 downto 0);

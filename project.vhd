@@ -16,9 +16,9 @@ entity project_reti_logiche is
 	);
 end project_reti_logiche;
 
-architecture behavioral of project is
+architecture behavioral of project_reti_logiche is
 
-	component datapath is
+	component dp is
 		port (
 			i_clk : in std_logic;
 			i_rst : in std_logic;
@@ -62,7 +62,7 @@ architecture behavioral of project is
 	signal rw : std_logic;
 
 	begin
-		DATAPATH: datapath port map (
+		DATAPATH: dp port map (
 			i_clk,
 			i_rst,
 			i_data,
